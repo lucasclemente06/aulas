@@ -39,16 +39,15 @@ html, body {
 header {
     background-color: black;
     color: white;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 header > h1 {
     padding-top: 50px;
-    /* text-transform: uppercase;  <- outra maneira de deixar todas as letras maisculas*/
     font-variant: small-caps;
     font-family: var(--font2);
     font-size: 10vw;
+    /* text-transform: uppercase;  <- outra maneira de deixar todas as letras maisculas*/
     
 } 
 
@@ -62,7 +61,7 @@ header a, footer > a {
     font-weight: bolder;
 }
 
-header a:hover > footer > a:hover {
+header a:hover , footer > a:hover {
     text-decoration: underline;
 }
 
@@ -95,19 +94,20 @@ section.imagem {
     background-color: rgb(44, 43, 43);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
+    background-attachment: fixed;
+    background-size: cover;
     
-
 }
 
 section#img01 {
     background-image: url("../imagens/background001.jpg");
     background-position: right center;
-    background-size: cover;
+
 }
 
 section#img02 {
     background-image: url("../imagens/background002.jpg");
-    background-size: cover;
+    background-position: right bottom;
 
 }
 
@@ -117,3 +117,4 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
